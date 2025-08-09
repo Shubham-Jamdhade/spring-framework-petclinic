@@ -15,8 +15,9 @@ FROM openjdk:25-ea-21-jdk
 
 WORKDIR /app
 
-COPY --from=build /app/target/*.jar app.jar
+COPY --from=build /app/target/*.war app.war
 
-CMD java -jar app.jar
+CMD java -war app.war
+
 
 EXPOSE 8080
