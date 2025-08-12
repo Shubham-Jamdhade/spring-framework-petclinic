@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: spring-petclinic
+  name: spring-framework-petclinic
   labels:
     app: petclinic
 spec:
@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: petclinic
-        image: devopswithdayanand/e2-petclinic:3.4.0-SNAPSHOT
+        image: shubhamjamdhade123/e2-petclinic:v1
         ports:
         - containerPort: 8080
